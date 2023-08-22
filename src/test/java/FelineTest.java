@@ -14,16 +14,20 @@ public class FelineTest {
 
     @Test
     public void getFamilyTestIsItFelineFamily() {
-        Assert.assertEquals("Кошачьи", feline.getFamily());
+        String expectedFamily = "Кошачьи";
+
+        Assert.assertEquals(expectedFamily, feline.getFamily());
     }
 
     @Test
     public void getKittensTestShouldReturnOne() {
-        Assert.assertEquals(1, feline.getKittens());
+        int expectedCount = 1;
+        Assert.assertEquals(expectedCount, feline.getKittens());
     }
 
     @Test
     public void getKittensTestShouldReturnSpecifiedAmount() {
-        Assert.assertEquals(3, feline.getKittens(3));
+        int expectedCount = 3;
+        Assert.assertEquals(expectedCount, feline.getKittens(expectedCount));
     }
 }

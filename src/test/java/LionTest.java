@@ -11,19 +11,6 @@ import static org.junit.Assert.assertEquals;
 public class LionTest {
 
     Feline feline = new Feline();
-
-//    @Test
-//    public void getFoodTestShouldReturnLionFoodList() throws Exception {
-//        Lion lion = new Lion("Самец", feline);
-//        Assert.assertEquals(List.of("Животные", "Птицы", "Рыба"), lion.getFood());
-//    }
-
-//    @Test
-//    public void getKittensLionFemaleTestShouldReturnOne() throws Exception {
-//        Lion lion = new Lion("Самец", feline);
-//        assertEquals(1, lion.getKittens());
-//    }
-
     @Test
     public void otherSexExceptionShouldReturnUnknownSexLionMessageString() {
         String expectedString = "Используйте допустимые значения пола животного - самец или самка";

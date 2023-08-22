@@ -18,9 +18,10 @@ public class LionMockitoTest {
 
     @Test
     public void getKittensLionFemaleTestShouldReturnOne() throws Exception {
+        int expectedCount = 1;
         Lion lion = new Lion("Самец", feline);
-        Mockito.when(feline.getKittens()).thenReturn(1);
-        assertEquals(1, lion.getKittens());
+        Mockito.when(feline.getKittens()).thenReturn(expectedCount);
+        assertEquals(expectedCount, lion.getKittens());
     }
 
     @Test

@@ -19,11 +19,13 @@ public class CatTest {
 
     @Test
     public void getCatSoundTestShouldReturnCorrectSound() {
-        assertEquals("Мяу", cat.getSound());
+        String expectedSound = "Мяу";
+        assertEquals(expectedSound, cat.getSound());
     }
 
     @Test
     public void getCatFoodTestShouldReturnCorrectFood() throws Exception {
-        assertEquals(List.of("Животные", "Птицы", "Рыба"), cat.getFood());
+        List<String> expectedFood = List.of("Животные", "Птицы", "Рыба");
+        assertEquals(expectedFood, cat.getFood());
     }
 }
